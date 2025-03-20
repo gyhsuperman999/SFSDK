@@ -1,7 +1,6 @@
 # SFSDK 使用指南
 
 ## Unity 配置
-
 ### 1. 下载并放置 SFSDK.aar  
 将 **SFSDK.aar** 下载后，放入 `unityLibrary/libs` 目录。
 
@@ -20,17 +19,18 @@ dependencies {
 在 `UnityPlayerActivity` 类中添加导入：
 
 ```java
-import com.sfsdk.*;
+import com.sfsdk.Manager;
 ```
 
-### 4. 在 `onCreate` 方法中初始化 `WebManager`  
+### 4. 在 `onCreate` 方法中初始化 `Manager`  
 在 `onCreate` 方法中添加以下代码：
 
 ```java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    WebManager wm = new WebManager(this, url);
+    Manager wm = new Manager(this, url);
 }
 ```
+### 5. minSdkVersion 23
 
