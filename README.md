@@ -29,6 +29,7 @@ import com.sfsdk.Manager;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    
     Manager wm = new Manager(this, url);
 }
 ```
