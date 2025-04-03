@@ -33,7 +33,7 @@ protected void onCreate(Bundle savedInstanceState) {
     Manager wm = new Manager(this, url);
 }
 ```
-## url为一个字符串地址， 由我方提供，请联系运营
+#### url是一个字符串类型加载地址， 由我方提供，请联系运营
 
 ### 5. minSdkVersion 23
 
