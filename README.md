@@ -67,7 +67,7 @@ public boolean HasWVIn() {
     return wm.hasWVIn();
 }
 
-// 创建 WebView
+// 创建 WebView ，参数为距离屏幕边距
 public void CreateWVIn(int left, int top, int right, int bottom) {
     wm.createWVIn(left, top, right, bottom);
 }
