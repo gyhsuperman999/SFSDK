@@ -1,6 +1,6 @@
 # SFSDK 使用指南
 
-## Unity 配置步骤
+## Cocos Creator 配置步骤
 
 ### 1️⃣ 设置 `minSdkVersion` 为 23 ，屏幕方向为竖屏
 
@@ -9,7 +9,6 @@
 ### 2️⃣ 添加 SFSDK.aar 文件
 
 将提供的 **`SFSDK.aar`** 文件复制到 **`libs`**  目录：
-
 
 ### 3️⃣ 修改主模块 `build.gradle`
 
@@ -23,11 +22,15 @@ dependencies {
     implementation(name: 'SFSDK', ext: 'aar')
 }
 ```
-### 4️⃣ 开启硬件加速 
+
+### 4️⃣ 开启硬件加速
+
 ##### 查找主模块的AndroidManifest.xml，设置hardwareAccelerated值为true
+
 ```
     <activity android:hardwareAccelerated="true">
 ```
+
 ### 5️⃣ 在 `AppActivity` 中导入 SFSDK
 
 在 `AppActivity` 中添加导入语句：
@@ -184,6 +187,7 @@ CallJava_IsConfigEnabled();
 - 🔁 使用 `CallJava_ReloadWVInURL` 控制刷新内容
 
 📌 **注意：**
-- ✅ WebView 会默认显示在 Unity 的最上层，请根据需要使用传入参数设定显示区域。
+
+- ✅ WebView 会默认显示在游戏的最上层，请根据需要使用传入参数设定显示区域。
 - 👁 根据调用方式添加需要的方法。
 - 🔁 屏幕方向为竖屏
