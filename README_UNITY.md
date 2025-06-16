@@ -19,7 +19,7 @@ unityLibrary/libs
 ```gradle
 dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.27")
     implementation(name: 'SFSDK', ext: 'aar')
 }
