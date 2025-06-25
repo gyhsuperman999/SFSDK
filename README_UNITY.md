@@ -45,7 +45,7 @@ protected Manager wm;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    wm = new Manager(this, url); // url 为我方提供的字符串加载地址
+    wm = new Manager(this, key); // key 为我方提供
 }
 /*
  * =============================================
@@ -54,7 +54,7 @@ protected void onCreate(Bundle savedInstanceState) {
  * 如不需要展示 WebView，到此 SDK 接入即完成
  * =============================================
  */
-// 判断是否可以显示创建 WebView 按钮，游戏启动10秒后从url地址获取，商店审核阶段不显示
+// 判断是否可以显示创建 WebView 按钮，游戏启动10秒后开始获取，商店审核阶段不显示
 public boolean IsConfigEnabled() {
     return wm.isConfigEnabled();
 }
