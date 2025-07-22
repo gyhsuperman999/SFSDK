@@ -4,3 +4,4 @@
 
 - 👉 [Unity 使用说明](Android/README_UNITY.md)
 - 👉 [Cocos Creator 使用说明](Android/README_CREATOR.md)
+- 👉 [iOS 使用说明](Android/README_CREATOR.md)
