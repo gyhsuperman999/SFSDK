@@ -85,7 +85,7 @@ public static void ReloadWVInURL() {
 }
 ```
 
-✅ **url** 为字符串类型地址，由我方提供，请联系运营获取。
+✅ **key** 为字符串类型地址，由我方提供，请联系运营获取。
 
 ## Creator 侧调用 Java 方法（TS 脚本）
 
