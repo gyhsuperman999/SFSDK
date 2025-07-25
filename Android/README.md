@@ -1,6 +1,6 @@
 # SDK 使用指南
 
-## Cocos Creator 配置步骤
+## 配置步骤
 
 ### 1️⃣ 设置 `minSdkVersion` 为 23 ，屏幕方向为竖屏
 
@@ -49,4 +49,5 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 
 ```
+
 ✅ **key** 为字符串类型地址，由我方提供，请联系运营获取。
