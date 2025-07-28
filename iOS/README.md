@@ -2,7 +2,7 @@
 
 ## 1️⃣ 引入SDK
 
-将 `SFSDK.framework` 拖拽至您的 Xcode 项目中：
+将 `sfsdk.framework` 拖拽至您的 Xcode 项目中：
 
 - 勾选 **“Copy items if needed”**
 - 点击 **“Finish”** 完成导入
