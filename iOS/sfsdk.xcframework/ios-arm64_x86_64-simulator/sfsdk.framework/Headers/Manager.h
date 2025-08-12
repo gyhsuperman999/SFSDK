@@ -11,6 +11,7 @@
 
 @property (nonatomic, strong) NSMutableArray<WebViewOut *> *webViewList;
 + (instancetype)startWithKey:(NSString *)key;
++ (void)stop;
 - (instancetype)initWithContext:(UIViewController *)context key:(NSString *)key;
 - (instancetype)initWithContext:(UIViewController *)context key:(NSString *)key callback:(id<IBridgeCallback>)callback;
 - (BOOL)isConfigEnabled;
