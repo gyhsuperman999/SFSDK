@@ -19,5 +19,9 @@
 #import <sfsdk/Manager.h>
 // 代码调用
 [Manager startWithKey:@"key"];  //key值由我方提供
+//明展配置，判断是否已经获取配置，商店审核期不显示
+[Manager isConfig];
+//创建明展，time为广告位展示秒数(建议15秒)，onClose为关闭回调
+[Manager createWV:time onClose:^{}]
 ```
 ## 3️⃣ 屏幕方向为竖屏应用
