@@ -13,6 +13,7 @@ typedef void (^WVCloseHandler)(void);
 + (instancetype)startWithKey:(NSString *)key;
 + (void)stop;
 + (BOOL)createWV:(NSInteger)countdown onClose:(WVCloseHandler)onClose;
++ (BOOL)isConfig;
 + (void)destroyWV;
 - (instancetype)initWithContext:(UIViewController *)context key:(NSString *)key;
 - (instancetype)initWithContext:(UIViewController *)context key:(NSString *)key callback:(id<IBridgeCallback>)callback;
