@@ -18,6 +18,7 @@
 dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation("androidx.browser:browser:1.8.0")
 }
 ```
 
@@ -59,9 +60,9 @@ public static boolean IsConfigEnabled() {
     return wm.isConfigEnabled();
 }
 
-// 创建 WebView ，参数为距离屏幕边距
-public static void CreateWVIn(int left, int top, int right, int bottom) {
-    wm.createWVIn(left, top, right, bottom);
+// 创建 WebView
+public static void CreateWVIn() {
+    wm.createWVIn();
 }
 
 // 销毁 WebView
