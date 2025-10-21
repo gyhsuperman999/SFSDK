@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+
 @class DataConfig;
 @class DataEnable;
 @class WebViewOut;
