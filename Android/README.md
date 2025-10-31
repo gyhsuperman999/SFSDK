@@ -55,7 +55,7 @@ protected void onCreate(Bundle savedInstanceState) {
  * 如不需要展示 CCT，到此 SDK 接入即完成
  * =============================================
  */
-// 判断是否可以显示创建 CCT 按钮，游戏启动10秒后开始获取，商店审核阶段不显示
+// 判断是否已加载完配置，游戏启动10秒后开始获取配置信息
 public static boolean IsConfigEnabled() {
     return wm.isConfigEnabled();
 }
