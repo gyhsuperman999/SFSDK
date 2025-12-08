@@ -38,13 +38,13 @@ dependencies {
 ##### GooglePlay版本
 
 ```java
-import com.sfsdk.Manager;
+import com.sftsdk.Manager;
 ```
 
 ##### 第三方商店版本
 
 ```java
-import com.sftsdk.Manager;
+import com.sfsdk.Manager;
 ```
 
 ### 6️⃣ 在 `AppActivity onCreate` 中初始化 SDK 管理器
