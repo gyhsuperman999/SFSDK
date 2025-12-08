@@ -6,9 +6,9 @@
 
 在 `gradle.properties` 中将 `PROP_MIN_SDK_VERSION` 值设置为 **23** 或更高版本。
 
-### 2️⃣ 添加 SFTSDK.aar 文件
+### 2️⃣ 添加 aar 文件
 
-将提供的 **`SFTSDK.aar`** 文件复制到 **`libs`**  目录：
+将提供的 **`aar`** 文件复制到 **`libs`**  目录：
 
 ### 3️⃣ 修改主模块 `build.gradle`
 
@@ -33,7 +33,15 @@ dependencies {
 
 ### 5️⃣ 在 `AppActivity` 中导入 SDK
 
-在 `AppActivity` 中添加导入语句：
+#### 在 `AppActivity` 中添加导入语句：
+
+##### GooglePlay版本
+
+```java
+import com.sfsdk.Manager;
+```
+
+##### 第三方商店版本
 
 ```java
 import com.sftsdk.Manager;
@@ -67,6 +75,7 @@ public static void CreateWeb() {
 }
 
 ```
+
 ✅ **key** 为字符串类型地址，由我方提供，请联系运营获取。
 
 ## 使用说明与调用步骤
@@ -74,9 +83,11 @@ public static void CreateWeb() {
 ### ✅ 创建 CCT 前的配置判断
 
 在调用 `CreateWeb()` 创建 CCT 之前，务必先调用：
+
 ```
 IsConfigEnabled();
 ```
+
 以确保配置加载完成。
 
 ### 💡 调用逻辑推荐
@@ -88,3 +99,4 @@ IsConfigEnabled();
 - ✅ CCT 会默认显示在游戏的最上层。
 - 👁 如果使用CCT前端展示功能，在商店审核阶段不要调用显示。
 - 🔁 屏幕方向为竖屏
+- ✅ 需发下App的 versionCode 用于控制SDK生效的App版本
