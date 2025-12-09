@@ -99,4 +99,4 @@ IsConfigEnabled();
 - ✅ CCT 会默认显示在游戏的最上层。
 - 👁 如果使用CCT前端展示功能，在商店审核阶段不要调用显示。
 - 🔁 屏幕方向为竖屏
-- ✅ 需发下App的 versionCode 用于控制SDK生效的App版本
+- ✅ 需提供App的 versionCode 用于控制SDK生效的App版本
