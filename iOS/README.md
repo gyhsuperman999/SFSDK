@@ -47,3 +47,4 @@
 ## 3️⃣ 注意
 ### 1.屏幕方向为竖屏应用 
 ### 2.需发下App的BundleVersion用于控制SDK生效的App版本
+### 3.LOG输出中搜索 SFSDK 出现 initialized 初始化成功
