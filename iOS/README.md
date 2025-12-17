@@ -30,9 +30,7 @@ pod install --repo-update
 
 ```objective-c
 // 在要用的地方，一般是工程的启动入口调用就行。
-// 使用 xcframework 引入头文件
-#import <sfsdk/Manager.h>
-// 使用静态库引入头文件
+// 引入头文件
 #import "Manager.h"
 // 代码调用
 [Manager startWithKey:@"key"];  //key值由我方提供
