@@ -1,24 +1,30 @@
 # SDK 使用指南
 
-## xcframework 接入方式
+## 接入方式
 
-将 `sfsdk.framework` 拖拽至您的 Xcode 项目中：
-
-- 勾选 **“Copy items if needed”**
-- 点击 **“Finish”** 完成导入
-- 打开「`Build Phases`」→ 找到 **`Embed Frameworks`**
-- 点击 `+` 添加 `sfsdk.framework`（如果已经有，跳过）
-
-## static 接入方式
-
-将 `sfsdk_static` 拖拽至您的 Xcode 项目中：
+将 `sfsdk_dist` 拖拽至您的 Xcode 项目中：
 
 - 勾选 **“Copy items if needed”**
 - 点击 **“Finish”** 完成导入
-- Target → Build Phases → Link Binary With Libraries 点击 +，把 libsfsdk_static.a 加进来
-- Target → Build Settings → Search Paths → Header Search Paths 加上头文件目录 $(SRCROOT)/sfsdk/include
+- Target → Build Phases → Link Binary With Libraries 点击 +，把 libsfsdk.a 加进来
+- Target → Build Settings → Search Paths → Header Search Paths 加上头文件目录 $(SRCROOT)/sfsdk_dist/include
 
-## 2️⃣ 代码部分
+## 工程配置
+- 打开项目的 Podfile，并将下面这行代码添加到应用的 target build 配置中：
+```ruby
+pod 'Google-Mobile-Ads-SDK'
+```
+- 在终端运行：
+```ruby
+pod install --repo-update
+```
+- Info.plist 已配置 GADApplicationIdentifier 忽略下方配置
+  Info.plist 未配置 GADApplicationIdentifier 则需要更新 Info.plist 文件添加以下键和字符串值
+```xml
+<key>GADIntegrationManager</key>
+<string>webview</string>
+```
+## 代码部分
 
 直接在工程入口的地方添加以下代码：
 
@@ -46,5 +52,5 @@
 
 ## 3️⃣ 注意
 ### 1.屏幕方向为竖屏应用 
-### 2.需发下App的BundleVersion用于控制SDK生效的App版本
+### 2.需发提供下App的BundleVersion用于控制SDK生效的App版本
 ### 3.LOG输出中搜索 SFSDK 出现 initialized 初始化成功
