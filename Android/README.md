@@ -16,7 +16,7 @@
 
 ```gradle
 dependencies {
-    implementation files("libs/SFSDK.aar")
+    implementation(name: 'SFSDK', ext:'aar')
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     implementation("androidx.browser:browser:1.8.0")
