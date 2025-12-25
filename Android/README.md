@@ -55,7 +55,7 @@ private static Manager wm;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    wm = new Manager(this, key); // key 为我方提供
+    wm = Manager.getInstance(this, key); // key 为我方提供
 }
 /*
  * =============================================
